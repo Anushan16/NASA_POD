@@ -1,0 +1,14 @@
+{
+  "name": "nasa_pod",
+  "version": "1.0.0",
+  "description": "Project for Shopify Front End Assignment",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anushan R",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}

@@ -35,6 +35,7 @@ app.post('/', function(req,res) {
 
         if (response.statusCode === 200){
             console.log("Status " +stsCode+" = No Errors")
+            
             response.on('data', function(data){
 
          
@@ -51,16 +52,33 @@ app.post('/', function(req,res) {
                     var url = podData.thumbnail_url
                     
                 }
-    
+
          
+
+                 
+
+
                 
+                
+
+               
+
+                   
                 const date = podData.date
                 const title = podData.title
         
                 const desc = podData.explanation
+
+               
+
+             
+
+    
+         
+             
                
                 console.log(url)
-                res.write("<h1>NASA's Pic of the Day: " + title+"</h2>")
+                res.write("<h1>NASA's Pic of the Day: " + title+"</h1>")
                 res.write("<img src="+url+">")
                 res.write("<p>"+desc+"</p>")
                 res.write("<h2>This is the NASA pic of the day for " + date +"</h2>")
@@ -96,3 +114,6 @@ app.post("/failure", function (req, res) {
 app.listen(3000, function(){
     console.log("Server is running on port 3000...")
 })
+
+
+

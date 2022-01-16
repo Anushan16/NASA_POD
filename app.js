@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require('express');
 const { get } = require('http');
 const app = express();
@@ -27,7 +28,9 @@ app.get("/", function(req,res) {
 
 app.post('/', function(req,res) {
 
-    const apiKey = "1gY8x93RZ3i7tl4vJFLO0IeQqaEfdOXGXqhAFWKm"
+    const apiKey = process.env.API_KEY
+
+
 
     const url = 'https://api.nasa.gov/planetary/apod?api_key='+apiKey+'&date='+req.body.dateChosen+'&thumbs=True'
     console.log(url)

@@ -95,6 +95,8 @@ Along the way, there were several obstacles in developing this application.
 <!-- ROADMAP -->
 ## Roadmap
 
+A collection of updatesI'd liek to implement in the future to improve functionality of the application
+
 - [ ] Database integration to save previous likes
    - [ ] Interact with other users and see activity
 - [ ] Improve Front-End Layout (utilize a more complex framework)

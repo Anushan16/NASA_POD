@@ -20,7 +20,7 @@ body {
 .mainColor {
     
     
-    /* background: linear-gradient(to left, #B098D7 , #94A3DA); */
+    
     outline: none;
     background-color: rgb(228, 228, 228)
 
@@ -127,3 +127,4 @@ body {
     height: 200px;
   }
 
+  

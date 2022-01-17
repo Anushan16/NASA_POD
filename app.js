@@ -25,7 +25,7 @@ app.set('view engine', 'ejs')
 
 app.get("/", function (req, res) {
 
-    res.render("home")
+    res.render("home",{titleName: "NASA's Picture of The Day"})
 
 
 });
@@ -104,7 +104,7 @@ app.post('/', function (req, res) {
                         theTitle: title,
                         theDesc: desc,
                         theURL: url
-                    }
+                    }, titleName : "POD for " + date
                 })
 
 
@@ -119,7 +119,7 @@ app.post('/', function (req, res) {
 
         } else {
             console.log("Status " + stsCode + " = Sorry, there seems to be a problenm... please try again later")
-            res.render("failure")
+            res.render("failure",  {titleName: "Houston... we have a problem"})
 
 
         }
